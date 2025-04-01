@@ -1,0 +1,28 @@
+﻿<Window x:Class="AutomatBiletowy.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Automat Biletowy" Height="400" Width="600">
+    <Grid>
+        <!-- ustawienia gridu -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- naglowek -->
+        <TextBlock Grid.Row="0" Text="Automat Biletowy - Bielsko-Biała, Piłsudskiego" 
+                   FontSize="20" HorizontalAlignment="Center" Margin="10"/>
+
+        <!-- menu wyboru -->
+        <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Button x:Name="KupBiletButton" Content="1. Kup bilet" Width="200" Margin="5" Click="KupBiletButton_Click"/>
+            <Button x:Name="WszystkieTransakcjeButton" Content="2. Wyświetl zapisane transakcje" Width="200" Margin="5" Click="WszystkieTransakcjeButton_Click"/>
+            <Button x:Name="TransakcjeZDniaButton" Content="3. Wyświetl transakcje z danego dnia" Width="200" Margin="5" Click="TransakcjeZDniaButton_Click"/>
+            <Button x:Name="WynikiMiesiacButton" Content="4. Wyświetl wyniki za ostatni miesiąc" Width="200" Margin="5" Click="WynikiMiesiacButton_Click"/>
+        </StackPanel>
+
+        <!-- output -->
+        <TextBox x:Name="WynikTextBox" Grid.Row="2" Height="150" Margin="10" IsReadOnly="True" VerticalScrollBarVisibility="Auto"/>
+    </Grid>
+</Window>

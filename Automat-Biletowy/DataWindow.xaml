@@ -1,0 +1,17 @@
+﻿<Window x:Class="AutomatBiletowy.DataWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Podaj datę" Height="150" Width="300"
+        WindowStartupLocation="CenterOwner">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="Podaj datę (RRRR-MM-DD):" Margin="0,0,0,5"/>
+        <TextBox x:Name="DataBox" Grid.Row="1" Width="150" Margin="0,0,0,5"/>
+        <Button x:Name="ZatwierdzButton" Grid.Row="2" Content="Zatwierdź" Width="150" Click="ZatwierdzButton_Click"/>
+    </Grid>
+</Window>

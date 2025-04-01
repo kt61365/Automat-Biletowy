@@ -1,0 +1,53 @@
+[
+  {
+    "Kwota": 12,
+    "Bilety": [
+      {
+        "Numer": 1,
+        "Typ": "Normalny",
+        "Cena": 3,
+        "DataWydania": "2025-04-01T22:13:43.5534332+02:00"
+      },
+      {
+        "Numer": 2,
+        "Typ": "Normalny",
+        "Cena": 3,
+        "DataWydania": "2025-04-01T22:13:43.5539517+02:00"
+      },
+      {
+        "Numer": 3,
+        "Typ": "Normalny",
+        "Cena": 3,
+        "DataWydania": "2025-04-01T22:13:43.5539545+02:00"
+      },
+      {
+        "Numer": 4,
+        "Typ": "Normalny",
+        "Cena": 3,
+        "DataWydania": "2025-04-01T22:13:43.553956+02:00"
+      }
+    ]
+  },
+  {
+    "Kwota": 2,
+    "Bilety": [
+      {
+        "Numer": 1,
+        "Typ": "Ulgowy",
+        "Cena": 2,
+        "DataWydania": "2025-04-01T22:33:09.9350246+02:00"
+      }
+    ]
+  },
+  {
+    "Kwota": 3,
+    "Bilety": [
+      {
+        "Numer": 1,
+        "Typ": "Normalny",
+        "Cena": 3,
+        "DataWydania": "2025-04-01T22:43:00.291448+02:00"
+      }
+    ]
+  }
+]
