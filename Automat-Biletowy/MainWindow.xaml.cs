@@ -9,6 +9,7 @@ namespace AutomatBiletowy
 {
     public partial class MainWindow : Window
     {
+        //klasa do potencjalnej rozbudowy
         private static readonly Automat automat = new Automat("Bielsko-Biała, Piłsudskiego");
         private static readonly string sciezkaPliku = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..", "..", "..", "dane", "transakcje.json");
 

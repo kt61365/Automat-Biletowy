@@ -53,10 +53,10 @@ namespace AutomatBiletowy
         public static void WyświetlSprzedażZaOstatniMiesiąc(List<Transakcja> transakcje, StringBuilder wynik)
         {
             DateTime pierwszyDzienMiesiaca = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1);
-            var transakcjeOMiesiac = transakcje.Where(t => t.PobierzDateTransakcji() >= pierwszyDzienMiesiaca);
+            var transakcjeZaOstatniMiesiac = transakcje.Where(t => t.PobierzDateTransakcji() >= pierwszyDzienMiesiaca);
 
-            int liczbaBiletow = transakcjeOMiesiac.Sum(t => t.Bilety.Count);
-            decimal lacznaKwota = transakcjeOMiesiac.Sum(t => t.PobierzKwote());
+            int liczbaBiletow = transakcjeZaOstatniMiesiac.Sum(t => t.Bilety.Count);
+            decimal lacznaKwota = transakcjeZaOstatniMiesiac.Sum(t => t.PobierzKwote());
 
             wynik.AppendLine("Sprzedaż w ostatnim miesiącu:");
             wynik.AppendLine($"  Liczba biletów: {liczbaBiletow}");

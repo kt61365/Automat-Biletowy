@@ -10,8 +10,8 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <TextBlock Grid.Row="0" Text="Podaj datę (RRRR-MM-DD):" Margin="0,0,0,5"/>
-        <TextBox x:Name="DataBox" Grid.Row="1" Width="150" Margin="0,0,0,5"/>
+        <TextBlock Grid.Row="0" Text="Podaj datę:" Margin="0,0,0,5"/>
+        <DatePicker x:Name="DataPicker" Grid.Row="1" Width="150" Margin="0,0,0,5" SelectedDate="{Binding SelectedDate}" />
         <Button x:Name="ZatwierdzButton" Grid.Row="2" Content="Zatwierdź" Width="150" Click="ZatwierdzButton_Click"/>
     </Grid>
 </Window>

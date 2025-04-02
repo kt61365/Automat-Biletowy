@@ -11,7 +11,7 @@ namespace AutomatBiletowy
         private string typBiletu = "";
         private readonly string sciezkaPliku;
         private readonly TextBox wynikTextBox;
-        private Brush defaultBackground; //domyslny kolor
+        private Brush defaultBackground; //domyslny kolor przycisku (niezaznaczony)
 
         public KupBiletWindow(string sciezkaPliku, TextBox wynikTextBox)
         {
@@ -44,7 +44,7 @@ namespace AutomatBiletowy
             }
 
             var transakcja = Transakcja.SprzedajBilet(typBiletu, liczbaBiletow);
-            StringBuilder wynik = new StringBuilder();
+            StringBuilder wynik = new StringBuilder(); //klasa SringBuilder zamiast stringa - dla łatwiejszej modyfikacji wyniku
             wynik.AppendLine($"Łączna kwota do zapłaty: {transakcja.PobierzKwote()} zł");
             wynik.AppendLine("Płatność przyjęta. Drukowanie biletów...");
             foreach (var bilet in transakcja.Bilety)

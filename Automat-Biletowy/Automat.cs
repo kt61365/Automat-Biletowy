@@ -1,4 +1,5 @@
-﻿namespace AutomatBiletowy
+﻿//klasa do potencjalnej rozbudowy
+namespace AutomatBiletowy
 {
     public class Automat
     {

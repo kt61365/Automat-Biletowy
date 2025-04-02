@@ -19,11 +19,12 @@ namespace AutomatBiletowy
 
         private void ZatwierdzButton_Click(object sender, RoutedEventArgs e)
         {
-            if (!DateTime.TryParse(DataBox.Text, out DateTime data))
+            if (!DataPicker.SelectedDate.HasValue)
             {
-                MessageBox.Show("Podaj poprawną datę w formacie RRRR-MM-DD!");
+                MessageBox.Show("Wybierz datę!");
                 return;
             }
+            DateTime data = DataPicker.SelectedDate.Value;
 
             var transakcje = OdczytZapis.WczytajTransakcjeZPliku(sciezkaPliku);
             StringBuilder wynik = new StringBuilder();
